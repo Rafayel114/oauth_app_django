@@ -1,0 +1,10 @@
+db.sqlite3
+accounts/accounts/settings.py
+*/__pycache__/*
+*.pyc
+accounts/*/migrations/*
+accounts/*/migrations
+accounts/media/*
+.DS_Store
+*/.DS_Store
+accounts/.vscode/*

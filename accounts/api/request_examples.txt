@@ -1,0 +1,34 @@
+# Authenticate and get Token
+# url: http://127.0.0.1:8080/api/login/
+# request example:
+# curl -X POST -d '{"email": "youremail@gmail.com", "password": "<password>"}' -H 'Content-Type: application/json' http://127.0.0.1:8080/api/login/
+
+
+# Get balance
+# http://127.0.0.1:8080/api/getMyBalance/
+# request example:
+# curl -X GET http://127.0.0.1:8080/api/getMyBalance/ -H 'Authorization: Token <<token>>'
+
+
+# Get CustomUserFields
+# http://127.0.0.1:8080/api/getField/
+# request example:
+# curl -X POST http://127.0.0.1:8080/api/getField/ -H 'Content-Type: application/json' -d '{"field": "first_field", "key": "e2fae62bef2e941e4eea11cfaacd8a7a50532da7"}'
+
+
+# Set CustomUserFields
+# http://127.0.0.1:8080/api/setField/
+# request example:
+# curl -X POST http://127.0.0.1:8080/api/setField/ -H 'Content-Type: application/json' -d '{"field": "first_field", "value": "api_changed333333", "key": "<token>"}'
+
+
+# Get Transactions
+# http://127.0.0.1:8080/api/getTransactions/
+# request example
+# curl -X POST http://127.0.0.1:8050/api/getTransactions/ -H 'Content-Type: application/json' -d '{"key": "<token>"}'
+
+
+# Set Transaction
+# http://127.0.0.1:8080/api/setTransaction/
+# request example
+# curl -X POST http://127.0.0.1:8050/api/setTransaction/ -H 'Content-Type: application/json' -d '{"key": "<token>", "transaction": {"value": "150", "comment": "api comment"}}'
